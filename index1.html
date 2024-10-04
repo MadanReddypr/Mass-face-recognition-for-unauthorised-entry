@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Face Recognition System for Unauthorized Entry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('templates/images/img1.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        h1:hover {
+            color: #0056b3;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #5cb85c;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #4cae4c;
+        }
+
+        .icon {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><i class="fas fa-user-lock icon"></i>Mass Face Recognition System for Unauthorized Entry</h1>
+    <form action="datascript" method="post">
+        <input type="text" placeholder="Enter the user name" name="username">
+        <input type="text" placeholder="Enter the user ID" name="user_id">
+        <button id="runScriptButton"><i class="fas fa-play icon"></i>Run Face Recognition Script</button>
+    </form>
+    <form action="test" method="post">
+        <button id="runner"><i class="fas fa-vial icon"></i>Test Model</button>
+    </form>
+</body>
+</html>
+
+ -->
+
+
+
+<!--this below code is to display unknown images in webpage-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Unknown Faces</title>
+ </head>
+ <body>
+     <h1>Unknown Faces</h1>
+     <img src="{{ url_for('video_feed') }}">
+ </body>
+ </html>

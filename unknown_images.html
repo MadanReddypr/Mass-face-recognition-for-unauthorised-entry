@@ -1,0 +1,45 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unknown Persons</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <h1>Unknown Persons</h1>
+    <div class="unknown-images">
+        {% for image in unknown_images %}
+           <img src="{{ image }}" alt="Unknown Person">
+        {% endfor %}
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unknown Persons</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <h1>Unknown Persons</h1>
+    <div class="unknown-images">
+        {% for image in unknown_images %}
+            <img src="{{ url_for('static', filename=image) }}" alt="Unknown Person">
+
+            <!--<img src="{{ url_for('static', filename='unknown_faces/' + image) }}" alt="Unknown Person">-->
+        {% endfor %}
+    </div>
+</body>
+</html>
+
+
+ 
